@@ -42,23 +42,23 @@ nav h1:hover {
 	text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
 }
 
-nav section {
-    display: flex;
-    gap: 2rem;
+section {
+	display: flex;
+	gap: 2rem;
 }
 
 form {
-    height: 3rem;
-    width: 6rem;
-    align-self: center;
-    display: flex;
+	height: 3rem;
+	width: 6rem;
+	align-self: center;
+	display: flex;
 }
 
 form img {
-    object-fit: contain;
-    align-self: center;
-    height: 50%;
-    padding: 0.2rem;
+	object-fit: contain;
+	align-self: center;
+	height: 50%;
+	padding: 0.2rem;
 }
 
 nav a {
@@ -73,7 +73,7 @@ nav a {
 	cursor: pointer;
 }
 
-nav h2:hover {
+nav a:hover {
 	color: #ffffff;
 	cursor: pointer;
 }
@@ -127,12 +127,12 @@ nav h2:hover {
 }
 
 .item-grid {
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: space-evenly;
+	margin-top: 2rem;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	justify-content: space-evenly;
 }
 
 .item {
@@ -148,13 +148,14 @@ nav h2:hover {
 
 .item:hover {
 	border: darkgrey 2px solid;
+	background: rgba(255, 255, 255, 20%);
 }
 
 .item-name {
-    font-family: Benzin-Bold, sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    color: white;
+	font-family: Benzin-Bold, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: white;
 
 	align-self: flex-start;
 	margin-left: 1rem;

@@ -107,7 +107,7 @@ nav h2:hover {
 	margin-left: 5rem;
 }
 
-.itemGrid {
+.item-grid {
 	margin-top: 2rem;
 	width: 100%;
 	display: grid;
@@ -136,9 +136,6 @@ nav h2:hover {
 	font-weight: bold;
 	font-size: 24px;
 	color: white;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 
 	align-self: flex-start;
 	margin-left: 1rem;

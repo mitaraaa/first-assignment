@@ -1,231 +1,231 @@
 body {
-    background: black;
+	background: black;
 }
 
 @font-face {
-    font-family: Benzin-Bold;
-    src: url("src/fonts/Benzin Bold.ttf") format("truetype");
+	font-family: Benzin-Bold;
+	src: url("src/fonts/Benzin Bold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: Benzin-Semibold;
-    src: url("src/fonts/Benzin Semibold.ttf") format("truetype");
+	font-family: Benzin-Semibold;
+	src: url("src/fonts/Benzin Semibold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: Benzin-Regular;
-    src: url("src/fonts/Benzin Regular.ttf") format("truetype");
+	font-family: Benzin-Regular;
+	src: url("src/fonts/Benzin Regular.ttf") format("truetype");
 }
 
 nav {
-    display: flex;
-    position: sticky;
-    height: 4rem;
-    margin-bottom: 1rem;
-    justify-content: space-between;
+	display: flex;
+	position: sticky;
+	height: 4rem;
+	margin-bottom: 1rem;
+	justify-content: space-between;
 }
 
 nav h1 {
-    font-family: Benzin-Bold, sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    color: white;
+	font-family: Benzin-Bold, sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	color: white;
 
-    align-self: center;
-    margin-left: 5rem;
-    transition: 300ms;
-    cursor: pointer;
+	align-self: center;
+	margin-left: 5rem;
+	transition: 300ms;
+	cursor: pointer;
 }
 
 nav h1:hover {
-    color: black;
-    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
+	color: black;
+	text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
 }
 
 nav a {
-    font-family: Benzin-Regular, sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    color: darkgrey;
-    align-self: center;
-    padding-right: 5rem;
+	font-family: Benzin-Regular, sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	color: darkgrey;
+	align-self: center;
+	padding-right: 5rem;
 
-    transition: 300ms;
-    cursor: pointer;
+	transition: 300ms;
+	cursor: pointer;
 }
 
 nav h2:hover {
-    color: #ffffff;
-    cursor: pointer;
+	color: #ffffff;
+	cursor: pointer;
 }
 
 .header {
-    height: 15rem;
-    width: 100%;
-    background: url("src/images/header-bg.svg");
-    object-fit: fill;
-    position: relative;
+	height: 15rem;
+	width: 100%;
+	background: url("src/images/header-bg.svg");
+	object-fit: fill;
+	position: relative;
 }
 
 .header h1 {
-    font-family: Benzin-Bold, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 48px;
-    color: white;
-    position: static;
-    padding-top: 5rem;
-    margin-top: 0;
-    margin-bottom: 0;
+	font-family: Benzin-Bold, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 48px;
+	color: white;
+	position: static;
+	padding-top: 5rem;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .header h2 {
-    font-family: Benzin-Regular, sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    text-align: center;
-    color: darkgrey;
-    position: static;
-    margin-top: 0;
+	font-family: Benzin-Regular, sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	text-align: center;
+	color: darkgrey;
+	position: static;
+	margin-top: 0;
 }
 
 .category {
-    margin-top: 2rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    display: flow;
-    justify-content: flex-start;
+	margin-top: 2rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	display: flow;
+	justify-content: flex-start;
 }
 
 .category-name {
-    font-family: Benzin-Semibold, sans-serif;
-    font-weight: normal;
-    font-size: 24px;
-    text-align: left;
-    color: white;
-    position: static;
-    margin-left: 5rem;
+	font-family: Benzin-Semibold, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	text-align: left;
+	color: white;
+	position: static;
+	margin-left: 5rem;
 }
 
 .itemGrid {
-    margin-top: 2rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 30%);
-    grid-row-gap: 3rem;
-    justify-content: space-evenly;
+	margin-top: 2rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 30%);
+	grid-row-gap: 3rem;
+	justify-content: space-evenly;
 }
 
 .item {
-    height: 10rem;
-    border: black 2px solid;
-    border-radius: 8px;
-    display: flex;
-    overflow: hidden !important;
-    text-overflow: ellipsis;
-    width: 100%;
-    transition: 300ms;
+	height: 10rem;
+	border: black 2px solid;
+	border-radius: 8px;
+	display: flex;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+	width: 100%;
+	transition: 300ms;
 }
 
 .item:hover {
-    border: darkgrey 2px solid;
+	border: darkgrey 2px solid;
 }
 
 .item-name {
-    font-family: Benzin-Bold, sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	font-family: Benzin-Bold, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: white;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 
-    align-self: flex-start;
-    margin-left: 1rem;
+	align-self: flex-start;
+	margin-left: 1rem;
 }
 
 .item-about {
-    font-family: Benzin-Regular, sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    color: darkgrey;
-    width: 90%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	font-family: Benzin-Regular, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	color: darkgrey;
+	width: 90%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 
-    margin-top: -0.75rem;
-    margin-left: 1rem;
+	margin-top: -0.75rem;
+	margin-left: 1rem;
 }
 
 .item-price {
-    font-family: Benzin-Regular, sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    color: grey;
-    word-wrap: anywhere;
-    display: flex;
-    overflow: hidden;
+	font-family: Benzin-Regular, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	color: grey;
+	word-wrap: anywhere;
+	display: flex;
+	overflow: hidden;
 
-    bottom: 2.5rem;
-    position: absolute;
-    margin-left: 1rem;
-    z-index: 100;
+	bottom: 2.5rem;
+	position: absolute;
+	margin-left: 1rem;
+	z-index: 100;
 }
 
 .item-contents {
-    position: relative;
-    display: flow-root;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+	position: relative;
+	display: flow-root;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
 .item-image {
-    height: 90%;
-    object-fit: contain;
-    padding: 0.5rem;
-    border-radius: 4px;
- }
+	height: 90%;
+	object-fit: contain;
+	padding: 0.5rem;
+	border-radius: 4px;
+}
 
 .button-buy {
-    height: 30px;
-    width: 100px;
-    margin-left: 1rem;
-    position: absolute;
-    bottom: 1rem;
-    z-index: 100;
+	height: 30px;
+	width: 100px;
+	margin-left: 1rem;
+	position: absolute;
+	bottom: 1rem;
+	z-index: 100;
 
-    font-family: Benzin-Regular, sans-serif;
-    font-weight: normal;
-    font-size: 12px;
+	font-family: Benzin-Regular, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
 
-    color: darkgrey;
-    background: black;
-    border: darkgrey 2px solid;
-    border-radius: 50px;
-    transition: 300ms;
-    cursor: pointer;
+	color: darkgrey;
+	background: black;
+	border: darkgrey 2px solid;
+	border-radius: 50px;
+	transition: 300ms;
+	cursor: pointer;
 }
 
 .button-buy:hover {
-    border: white 2px solid;
-    color: black;
-    background: white;
+	border: white 2px solid;
+	color: black;
+	background: white;
 }
 
 footer {
-    width: 100%;
-    background: black;
-    display: table;
-    height: 4rem;
-    align-items: center;
-    font-family: Benzin-Regular, sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    text-align: center;
-    color: darkgrey;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+	width: 100%;
+	background: black;
+	display: table;
+	height: 4rem;
+	align-items: center;
+	font-family: Benzin-Regular, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	text-align: center;
+	color: darkgrey;
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
 }

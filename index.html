@@ -2,14 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Shop</title>
 </head>
 <body>
     <nav>
         <h1>/shop</h1>
-        <a href="mailto:212291@astanait.edu.kz">212291@astanait.edu.kz</a>
+        <section>
+            <form class="align">
+                <img id="horizontal" src="./src/images/horizontal-icon.png" alt="horizontal">
+                <img id="vertical" class="active" src="./src/images/vertical-icon.png" alt="vertical">
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $("#horizontal").click(function () {
+                            $(".item-grid").css("flex-direction", "row");
+                            $("#horizontal").css("border", "white 1px solid").css("border-radius", "8px");
+                            $("#vertical").css("border", "white 1px hidden").css("border-radius", "8px");
+                        });
+                        $("#vertical").click(function () {
+                            $(".item-grid").css("flex-direction", "column");
+                            $("#vertical").css("border", "white 1px solid").css("border-radius", "8px");
+                            $("#horizontal").css("border", "white 1px hidden").css("border-radius", "8px");
+                        });
+                    });
+                </script>
+            </form>
+            <a href="mailto:212291@astanait.edu.kz">212291@astanait.edu.kz</a>
+        </section>
     </nav>
     <div id="header" class="header">
         <h1>Accessories for your PC.</h1>
@@ -17,7 +38,7 @@
     </div>
     <div class="category" id="category-mouses">
         <h2 class="category-name">Mouses</h2>
-        <div class="itemGrid">
+        <div class="item-grid">
             <div class="item">
                 <img class="item-image" src="src/images/g305-gallery-1.webp" alt="Image of an item">
                 <div class="item-contents">
@@ -49,7 +70,7 @@
     </div>
     <div class="category" id="category-keyboards">
         <h2 class="category-name">Keyboards</h2>
-        <div class="itemGrid">
+        <div class="item-grid">
             <div class="item">
                 <img class="item-image" src="src/images/g915-tkl-gallery-1-carbon.webp" alt="Image of an item">
                 <div class="item-contents">

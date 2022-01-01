@@ -42,6 +42,25 @@ nav h1:hover {
     text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
 }
 
+nav section {
+    display: flex;
+    gap: 2rem;
+}
+
+form {
+    height: 3rem;
+    width: 6rem;
+    align-self: center;
+    display: flex;
+}
+
+form img {
+    object-fit: contain;
+    align-self: center;
+    height: 50%;
+    padding: 0.2rem;
+}
+
 nav a {
     font-family: Benzin-Regular, sans-serif;
     font-weight: normal;
@@ -107,12 +126,12 @@ nav h2:hover {
     margin-left: 5rem;
 }
 
-.itemGrid {
+.item-grid {
     margin-top: 2rem;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 30%);
-    grid-row-gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
     justify-content: space-evenly;
 }
 
@@ -136,9 +155,6 @@ nav h2:hover {
     font-weight: bold;
     font-size: 24px;
     color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 
     align-self: flex-start;
     margin-left: 1rem;
